@@ -19,7 +19,7 @@
           </form>
           <!-- 
             Diretiva ngIF, essas diretiva verifica se essa propriedade existe, caso exista essa parte sera exibida
-            senão permanece oculta
+            senão permanece oculta.
           -->
           <p-table id="abas" *ngIf="minha_previsao">
             <ng-template pTemplate="header">
@@ -45,13 +45,13 @@
           Puxando histórico
           <!-- 
             Diretiva ngIF, essas diretiva verifica se essa propriedade existe, caso exista essa parte sera exibida
-            senão permanece oculta
+            senão permanece oculta.
           -->
             <p-table *ngIf="historico_previsoes">
               <ng-template pTemplate="header" let-cidade>
                 <!-- 
                   Como o nosso historico_previsoes é uma lista/array de objetos,
-                  usamos a diretiva ngFor para percorrer cada linha e exibir as propriedade do objeto contido na linha
+                  usamos a diretiva ngFor para percorrer cada linha e exibir as propriedade do objeto contido na linha.
                 -->
                   <tr *ngFor="let prev of historico_previsoes">     
                       <th>{{prev.cidade}}</th>     
